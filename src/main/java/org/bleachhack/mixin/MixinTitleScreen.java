@@ -80,7 +80,7 @@ public class MixinTitleScreen extends Screen {
 					});
 		} else {
 			addDrawableChild(new ButtonWidget(width / 2 - 124, height / 4 + 96, 20, 20, new LiteralText("BH"), button -> {
-				BleachTitleScreen.customTitleScreen = !BleachTitleScreen.customTitleScreen;
+				BleachTitleScreen.customTitleScreen = true;
 				BleachFileHelper.saveMiscSetting("customTitleScreen", new JsonPrimitive(true));
 				client.setScreen(new TitleScreen(false));
 			}));
